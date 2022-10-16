@@ -1,0 +1,788 @@
+<!doctype html>
+<html lang="en-GB" dir="ltr" class="docs-wrapper docs-doc-page docs-version-current plugin-docs plugin-id-default docs-doc-id-tsdz2/opensource firmware/casainho/Usage-and-configuration-of-firmware-version-0.17.x">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="generator" content="Docusaurus v2.0.1">
+<link rel="search" type="application/opensearchdescription+xml" title="OpenSource-EBike" href="/opensearch.xml">
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9270569596814796" crossorigin="anonymous"></script><title data-rh="true">Usage-and-configuration-of-firmware-version-0.17.x | OpenSource-EBike</title><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:url" content="https://opensource-ebike.org/docs/tsdz2/opensource firmware/casainho/Usage-and-configuration-of-firmware-version-0.17.x"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Usage-and-configuration-of-firmware-version-0.17.x | OpenSource-EBike"><meta data-rh="true" name="description" content="The following applies to firmware version 0.17.x only!"><meta data-rh="true" property="og:description" content="The following applies to firmware version 0.17.x only!"><link data-rh="true" rel="icon" href="/img/hotlink-ok/favicon/favicon.ico"><link data-rh="true" rel="canonical" href="https://opensource-ebike.org/docs/tsdz2/opensource firmware/casainho/Usage-and-configuration-of-firmware-version-0.17.x"><link data-rh="true" rel="alternate" href="https://opensource-ebike.org/docs/tsdz2/opensource firmware/casainho/Usage-and-configuration-of-firmware-version-0.17.x" hreflang="en-GB"><link data-rh="true" rel="alternate" href="https://opensource-ebike.org/docs/tsdz2/opensource firmware/casainho/Usage-and-configuration-of-firmware-version-0.17.x" hreflang="x-default"><link data-rh="true" rel="preconnect" href="https://WZ05W1IA1Q-dsn.algolia.net" crossorigin="anonymous"><link rel="stylesheet" href="/assets/css/styles.73f5193e.css">
+<link rel="preload" href="/assets/js/runtime~main.44d6b64c.js" as="script">
+<link rel="preload" href="/assets/js/main.5ed12891.js" as="script">
+</head>
+<body class="navigation-with-keyboard">
+<script>!function(){function t(t){document.documentElement.setAttribute("data-theme",t)}var e=function(){var t=null;try{t=localStorage.getItem("theme")}catch(t){}return t}();t(null!==e?e:"light")}()</script><div id="__docusaurus">
+<div role="region"><a href="#" class="skipToContent_fXgn">Skip to main content</a></div><nav class="navbar navbar--fixed-top"><div class="navbar__inner"><div class="navbar__items"><button aria-label="Navigation bar toggle" class="navbar__toggle clean-btn" type="button" tabindex="0"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/"><div class="navbar__logo"><img src="/img/hotlink-ok/logo/logo.svg" alt="OpenSource-Ebike logo" class="themedImage_ToTc themedImage--light_HNdA"><img src="/img/hotlink-ok/logo/logo.svg" alt="OpenSource-Ebike logo" class="themedImage_ToTc themedImage--dark_i4oU"></div><b class="navbar__title text--truncate">OpenSource-Ebike</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/docs/tsdz2/intro">TSDZ2</a><a class="navbar__item navbar__link" href="/docs/bafang/intro">Bafang</a><a class="navbar__item navbar__link" href="/docs/display/intro">Display</a></div><div class="navbar__items navbar__items--right"><div class="navbar__item dropdown dropdown--hoverable dropdown--right"><a href="#" aria-haspopup="true" aria-expanded="false" role="button" class="navbar__link"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true" class="iconLanguage_nlXk"><path fill="currentColor" d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"></path></svg>English</a><ul class="dropdown__menu"><li><a href="/docs/tsdz2/opensource firmware/casainho/Usage-and-configuration-of-firmware-version-0.17.x" target="_self" rel="noopener noreferrer" class="dropdown__link dropdown__link--active">English</a></li></ul></div><a href="https://github.com/OpenSourceEBike/OpenSourceEBike.github.io" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" viewBox="0 0 24 24" class="iconExternalLink_nPIU"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"></path></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="Switch between dark and light mode (currently light mode)" aria-label="Switch between dark and light mode (currently light mode)"><svg viewBox="0 0 24 24" width="24" height="24" class="lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" class="darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg></button></div><div class="searchBox_ZlJk"><button type="button" class="DocSearch DocSearch-Button" aria-label="Search"><span class="DocSearch-Button-Container"><svg width="20" height="20" class="DocSearch-Search-Icon" viewBox="0 0 20 20"><path d="M14.386 14.386l4.0877 4.0877-4.0877-4.0877c-2.9418 2.9419-7.7115 2.9419-10.6533 0-2.9419-2.9418-2.9419-7.7115 0-10.6533 2.9418-2.9419 7.7115-2.9419 10.6533 0 2.9419 2.9418 2.9419 7.7115 0 10.6533z" stroke="currentColor" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round"></path></svg><span class="DocSearch-Button-Placeholder">Search</span></span><span class="DocSearch-Button-Keys"></span></button></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div class="main-wrapper mainWrapper_z2l0 docsWrapper_BCFX"><button aria-label="Scroll back to top" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docPage__5DB"><aside class="theme-doc-sidebar-container docSidebarContainer_b6E3"><div class="sidebar_njMd"><nav class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/intro">TSDZ2 OpenSource firmware</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Bluetooth-and-USB">Bluetooth-and-USB</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Calibrating-Torque-and-Power">Calibrating-Torque-and-Power</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Communication-Protocol">Original Protocol</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Development-Why-reducing-the-ADC-and-PWM-resolution-to-8-bits">Development-Why-reducing-the-ADC-and-PWM-resolution-to-8-bits</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Development">Various</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/FAQ">FAQ</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Features-and-configurations-for-Bafang-850C-LCD-firmware-v0.2.0">Features-and-configurations-for-Bafang-850C-LCD-firmware-v0.2.0</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Features-and-configurations-on-display--850C_SW102_v0.6.7">Features-and-configurations-on-display--850C_SW102_v0.6.7</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Features-and-configurations-on-display-850C_SW102_v0.7.0">Features-and-configurations-on-display-850C_SW102_v0.7.0</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Features-and-configurations-on-display-850C_v0.6.2">Features-and-configurations-on-display-850C_v0.6.2</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Features-and-configurations-on-display-850C_v0.6.3">Features-and-configurations-on-display-850C_v0.6.3</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Features-and-configurations-on-display-850C_v0.6.6">Features-and-configurations-on-display-850C_v0.6.6</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Features-and-configurations-on-display-860C_850C_SW102_v0.8.0">Features-and-configurations-on-display-860C_850C_SW102_v0.8.0</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Features-and-configurations-on-display">Features-and-configurations-on-display</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Flash-the-bootloader-and-firmware-on-SW102-using-SWD">Flash-the-bootloader-and-firmware-on-SW102-using-SWD</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Flash-the-firmware-on-850C-using-SWD">Flash-the-firmware-on-850C-using-SWD</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Flash-the-firmware-on-860C-850C-using-bootloader">Flash-the-firmware-on-860C-850C-using-bootloader</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Flash-the-firmware-on-Bafang-850C-LCD">Flash-the-firmware-on-Bafang-850C-LCD</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Flash-the-firmware-on-SW102">Flash-the-firmware-on-SW102</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Flash-the-firmware-on-TSDZ2">Flash-the-firmware-on-TSDZ2</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Home">About the TSDZ2 Flexible OpenSource firmware</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/How-TSDZ2-torque-sensor-works">How-TSDZ2-torque-sensor-works</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/How-to-Calibrate-the-Cadence-Sensor">The Difference Between Standard and Advanced Mode</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/How-to-calibrate-the-torque-sensor">How-to-calibrate-the-torque-sensor</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/How-to-flash-the-Flexible-OpenSource-firmware-on-KT-LCD3">How-to-flash-the-Flexible-OpenSource-firmware-on-KT-LCD3</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/How-to-improve-motor-heat-dissipation">How-to-improve-motor-heat-dissipation</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/How-to-improve-pedal-distance-to-frame-Q-factor">How-to-improve-pedal-distance-to-frame-Q-factor</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/How-to-install-TSDZ2-on-a-full-suspension-bicycle">How-to-install-TSDZ2-on-a-full-suspension-bicycle</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/How-to-install-TSDZ2-on-your-bicycle">How-to-install-TSDZ2-on-your-bicycle</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/How-to-install-brake-sensors">How-to-install-brake-sensors</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/How-to-install-motor-temperature-sensor">How-to-install-motor-temperature-sensor</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/How-to-install-the-Flexible-OpenSource-firmware">How-to-install-the-Flexible-OpenSource-firmware</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Improved-communications-protocol">Improved-communications-protocol</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Interesting-forks-and-projects">Interesting-forks-and-projects</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Modifying-a-TSDZ2-for-rear-braking">Modifying-a-TSDZ2-for-rear-braking</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/TSDZ2-Glossary">TSDZ2-Glossary</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/TSDZ2-and-KT-LCD3-advanced-features-with-Flexible-OpenSource-firmwares----DEVELOPMENT">TSDZ2-and-KT-LCD3-advanced-features-with-Flexible-OpenSource-firmwares----DEVELOPMENT</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/TSDZ2-and-KT-LCD3-advanced-features-with-Flexible-OpenSource-firmwares">TSDZ2-and-KT-LCD3-advanced-features-with-Flexible-OpenSource-firmwares</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/TSDZ2-motor-demagnetized-due-to-overheating">TSDZ2-motor-demagnetized-due-to-overheating</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/TSZD2-Hardware-Information">TSZD2-Hardware-Information</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Tutorial-BETA">TSDZ2 Firmware Updating &amp; Open Source firmware</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/docs/tsdz2/Why-should-you-use-the-Flexible-OpenSource-firmware-on-your-TSDZ2">Why-should-you-use-the-Flexible-OpenSource-firmware-on-your-TSDZ2</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/tsdz2/archive/KT-LCD3-archive">archive</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/tsdz2/development/FOC-derivation">development</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/tsdz2/displays/860C-850C-displays">displays</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret" aria-expanded="false" href="/docs/tsdz2/examples/Casainho-full-suspension-MTB-and-city-commuting">examples</a></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" aria-expanded="true" href="/docs/tsdz2/opensource firmware/casainho/0.20.0-(DEVELOPMENT)-KT-LCD3-TSDZ2-Manual">opensource firmware</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-2 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--sublist-caret menu__link--active" aria-expanded="true" tabindex="0" href="/docs/tsdz2/opensource firmware/casainho/0.20.0-(DEVELOPMENT)-KT-LCD3-TSDZ2-Manual">casainho</a></div><ul style="display:block;overflow:visible;height:auto" class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/tsdz2/opensource firmware/casainho/0.20.0-(DEVELOPMENT)-KT-LCD3-TSDZ2-Manual">0.20.0-(DEVELOPMENT)-KT-LCD3-TSDZ2-Manual</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/tsdz2/opensource firmware/casainho/Features-and-configurations-for-version-0.18.X">KT-LCD3: information and configuration</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/tsdz2/opensource firmware/casainho/Features-and-configurations-for-version-0.19.X">Features-and-configurations-for-version-0.19.X</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/tsdz2/opensource firmware/casainho/Usage-and-configuration-of-firmware-version-0.12">Usage-and-configuration-of-firmware-version-0.12</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/tsdz2/opensource firmware/casainho/Usage-and-configuration-of-firmware-version-0.13">Usage-and-configuration-of-firmware-version-0.13</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link" tabindex="0" href="/docs/tsdz2/opensource firmware/casainho/Usage-and-configuration-of-firmware-version-0.14.x">Usage-and-configuration-of-firmware-version-0.14.x</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-3 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/docs/tsdz2/opensource firmware/casainho/Usage-and-configuration-of-firmware-version-0.17.x">Usage-and-configuration-of-firmware-version-0.17.x</a></li></ul></li></ul></li></ul></nav><button type="button" title="Collapse sidebar" aria-label="Collapse sidebar" class="button button--secondary button--outline collapseSidebarButton_PEFL"><svg width="20" height="20" aria-hidden="true" class="collapseSidebarButtonIcon_kv0_"><g fill="#7a7a7a"><path d="M9.992 10.023c0 .2-.062.399-.172.547l-4.996 7.492a.982.982 0 01-.828.454H1c-.55 0-1-.453-1-1 0-.2.059-.403.168-.551l4.629-6.942L.168 3.078A.939.939 0 010 2.528c0-.548.45-.997 1-.997h2.996c.352 0 .649.18.828.45L9.82 9.472c.11.148.172.347.172.55zm0 0"></path><path d="M19.98 10.023c0 .2-.058.399-.168.547l-4.996 7.492a.987.987 0 01-.828.454h-3c-.547 0-.996-.453-.996-1 0-.2.059-.403.168-.551l4.625-6.942-4.625-6.945a.939.939 0 01-.168-.55 1 1 0 01.996-.997h3c.348 0 .649.18.828.45l4.996 7.492c.11.148.168.347.168.55zm0 0"></path></g></svg></button></div></aside><main class="docMainContainer_gTbr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Breadcrumbs"><ul class="breadcrumbs" itemscope="" itemtype="https://schema.org/BreadcrumbList"><li class="breadcrumbs__item"><a aria-label="Home page" class="breadcrumbs__link" href="/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_OVgt"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">opensource firmware</span><meta itemprop="position" content="1"></li><li class="breadcrumbs__item"><span class="breadcrumbs__link">casainho</span><meta itemprop="position" content="2"></li><li itemscope="" itemprop="itemListElement" itemtype="https://schema.org/ListItem" class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link" itemprop="name">Usage-and-configuration-of-firmware-version-0.17.x</span><meta itemprop="position" content="3"></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">On this page</button></div><div class="theme-doc-markdown markdown"><header><h1>Usage-and-configuration-of-firmware-version-0.17.x</h1></header><p>The following applies to firmware version 0.17.x only!</p><p>CAUTION: always use the same firmware version for both the motor
+controller and LCD unless otherwise specified!</p><p>NOTE: Before using the mid drive with new firmware, you must configure
+the options on the display correctly. For instance, you should configure
+your battery low voltage cut off so as to not over discharge the
+battery. Do set all other parameters also.</p><h1>KT-LCD3 information and configurations</h1><h2 class="anchor anchorWithStickyNavbar_LWe7" id="main_screen">1. Main screen<a class="hash-link" href="#main_screen" title="Direct link to heading">​</a></h2><ul><li><strong><code>&lt;u&gt;</code>{=html}Main screen<code>&lt;/u&gt;</code>{=html}</strong><ul><li><code>&lt;u&gt;</code>{=html}Assist level<code>&lt;/u&gt;</code>{=html}: assist level sets the
+motor power as a factor of the power that rider is doing on the
+pedals. For instance, if current assist level is 3 and if this
+level is configured as a factor of 2.0, when rider is doing on
+the pedals a power of 100 watts, the motor power used will then
+be 200 watts.\
+The assist level is changed by pressing UP and DOWN buttons.</li><li><code>&lt;u&gt;</code>{=html}Ebike wheel speed<code>&lt;/u&gt;</code>{=html}: the value of wheel
+speed in kms or mph.</li><li><code>&lt;u&gt;</code>{=html}Motor power<code>&lt;/u&gt;</code>{=html}: power used by the motor
+(in watts) that is being draw from the battery.</li><li><code>&lt;u&gt;</code>{=html}Battery state of charge<code>&lt;/u&gt;</code>{=html}: Battery state
+of charge based on battery voltage. There are 6 different
+levels. When battery is near empty, the battery symbol will be
+empty and blinking and the motor power will be reduced up to
+battery being totally empty.\
+The battery voltage used to calculate the state of charge has in
+consideration the battery pack resistance to avoid floating when
+power is being draw from the battery (the battery pack
+resistance value is set on configurations menu).</li><li><code>&lt;u&gt;</code>{=html}Lights<code>&lt;/u&gt;</code>{=html}: enabled/disable with a long
+press of UP button (LCD back light will also be change,
+depending on the configurations) and the motor controller will
+enable/disable the ebike lights.</li><li><code>&lt;u&gt;</code>{=html}Brake<code>&lt;/u&gt;</code>{=html}: Brake symbol is enabled when
+user press the ebike brakes (good to check that sensor brakes
+are working).</li><li><code>&lt;u&gt;</code>{=html}Time Measurement<code>&lt;/u&gt;</code>{=html}: Time measurement
+functions. Switch between TM or TTM to get measured time either
+from trip or user last reset.</li><li><code>&lt;u&gt;</code>{=html}Walk assist<code>&lt;/u&gt;</code>{=html}: enabled/disable with a
+long press of DOWN button. Although it is implemented on LCD, it
+is not yet implemented on the motor controller.</li><li><code>&lt;u&gt;</code>{=html}Offroad mode<code>&lt;/u&gt;</code>{=html}: if you have enabled the
+offroad mode (see configuration section below) this can be
+activated with the ON/OFF and UP button combination and
+deactivated with the ON/OFF and DOWN button combination. When
+active, the assist symbol above the assist level will start
+blinking. Offroad mode is disabled and inactive by default. We
+do not recommend you to activate offroad mode on public roads.
+In many countries offroad mode may only be used on private
+property.</li><li><code>&lt;u&gt;</code>{=html}Motor temperature / battery state of charge in
+percentage<code>&lt;/u&gt;</code>{=html}: this field can show either the motor
+temperature (when the sensor is installed), the battery state in
+percentage or none (you can switch what is shown by pressing
+POWER and UP buttons simultaneously).<ul><li><code>&lt;u&gt;</code>{=html}Motor temperature<code>&lt;/u&gt;</code>{=html}: motor
+temperature in degrees Celsius. When the power power is
+being limited due to over temperature, this field will blink
+(configure the temperature limits on configurations menu).</li><li><code>&lt;u&gt;</code>{=html}Battery state of charge in
+percentage<code>&lt;/u&gt;</code>{=html}: this percentage value is based on
+the accumulated battery power draw from your battery pack
+(set options on configurations menu).</li></ul></li><li><code>&lt;u&gt;</code>{=html}Odometer field<code>&lt;/u&gt;</code>{=html}: this field can show a
+few variables that are logic grouped in sub fields. You can
+change between fields by pressing ON/OFF button and sub fields
+by quick pressing UP button followed a long press UP button (you
+will see temporary the field and sub field number blinking on
+wheel speed field).<ul><li><code>&lt;u&gt;</code>{=html}1. Distance<code>&lt;/u&gt;</code>{=html}<ul><li><code>&lt;u&gt;</code>{=html}1.0 Trip distance<code>&lt;/u&gt;</code>{=html}: can be reset
+by quickly pressing DOWN button followed by a long press
+DOWN button (you will see trip distance value blinking
+if you keep pressed DOWN button and after 3 seconds the
+value will reset).</li><li><code>&lt;u&gt;</code>{=html}1.1 Distance since power on<code>&lt;/u&gt;</code>{=html}
+this value is automatically reset at power on. You can
+also reset by quick pressing DOWN button followed a long
+press DOWN button (you will see trip distance value
+blinking if you keep pressed DOWN button and after 3
+seconds the value will reset).</li><li><code>&lt;u&gt;</code>{=html}1.2 Odometer<code>&lt;/u&gt;</code>{=html}: can be set to a
+specific value on the configurations menu.</li></ul></li><li><code>&lt;u&gt;</code>{=html}2. Battery State of Charge<code>&lt;/u&gt;</code>{=html} (not
+shown if function is disabled in configuration menu)<ul><li><code>&lt;u&gt;</code>{=html}2.0 State of charge in
+percentage<code>&lt;/u&gt;</code>{=html}</li><li><code>&lt;u&gt;</code>{=html}2.1 Consumed watt-hours<code>&lt;/u&gt;</code>{=html}</li></ul></li><li><code>&lt;u&gt;</code>{=html}3. Battery State<code>&lt;/u&gt;</code>{=html}<ul><li><code>&lt;u&gt;</code>{=html}3.0 Voltage:<code>&lt;/u&gt;</code>{=html} Voltage of
+battery.</li><li><code>&lt;u&gt;</code>{=html}3.1 Current:<code>&lt;/u&gt;</code>{=html}: instantaneous
+current drawn from battery.</li></ul></li><li><code>&lt;u&gt;</code>{=html}4. Pedals<code>&lt;/u&gt;</code>{=html}<ul><li><code>&lt;u&gt;</code>{=html}4.0 Rider pedal power<code>&lt;/u&gt;</code>{=html}: in
+watts.</li><li><code>&lt;u&gt;</code>{=html}4.1 Pedal cadence<code>&lt;/u&gt;</code>{=html}: in
+revolutions per minute.</li><li><code>&lt;u&gt;</code>{=html}4.2 Pedal torque<code>&lt;/u&gt;</code>{=html}: in newton
+meter.</li></ul></li><li><code>&lt;u&gt;</code>{=html}5. Motor Temperature<code>&lt;/u&gt;</code>{=html} (not shown if
+function is disabled in configuration menu)<ul><li><code>&lt;u&gt;</code>{=html}5.0 Motor temperature:<code>&lt;/u&gt;</code>{=html}
+Temperature of motor.</li></ul></li><li><code>&lt;u&gt;</code>{=html}6. Time Measurement <code>&lt;/u&gt;</code>{=html}<ul><li><code>&lt;u&gt;</code>{=html}6.0 Time Measurement:<code>&lt;/u&gt;</code>{=html} Time
+measured since display is powered on.</li><li><code>&lt;u&gt;</code>{=html}6.1 Total Time Measurement:<code>&lt;/u&gt;</code>{=html}
+Total time measured since last reset.</li></ul></li></ul></li></ul></li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="motor_maximum_power_screen">2. Motor maximum power screen<a class="hash-link" href="#motor_maximum_power_screen" title="Direct link to heading">​</a></h2><p>In the maximum motor power sub menu you can set a limit to maximum motor
+power. This can be useful for various reasons, like controlling the
+battery range for long travels.</p><p>Access this screen by long pressing ON/OFF and UP buttons. Press UP and
+DOWN buttons to increase/decrease the value. Exit this screen by long
+pressing the ON/OFF button.</p><p>How it works: the motor controller will automatically limit current and
+therefore limit maximum motor power. As the battery discharges and the
+voltage decreases the motor controller will adapt and adjust the current
+to maintain the set limit.</p><p><strong>NOTES:</strong></p><ul><li>This function cannot be used when offroad mode is enabled. Disable
+offroad mode first.</li><li>It is not possible to set a higher motor power than the maximum
+allowed battery current set by user.</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="configuration_menu">Configuration menu<a class="hash-link" href="#configuration_menu" title="Direct link to heading">​</a></h2><ul><li>To enter configuration menu: long press UP and DOWN buttons.</li><li>To enter sub menus: press UP or DOWN button</li><li>To move to next subscreen: press ON/OFF button</li><li>To exit: long press the ON/OFF button</li></ul><h2 class="anchor anchorWithStickyNavbar_LWe7" id="general_setup">0: General Setup<a class="hash-link" href="#general_setup" title="Direct link to heading">​</a></h2><p>+----------------+----------------+----------------+----------------+
+| <strong>Submenu      | *              | </strong>Default      | <em>              |
+| number**       | </em>Configuration | value<strong>        | *Description</strong> |
+|                | name*<em>         |                |                |
++----------------+----------------+----------------+----------------+
+| 0              | Unit           | Metric         | Set (0) for    |
+|                |                |                | metric units   |
+|                |                |                | (km/h and      |
+|                |                |                | kilometers) or |
+|                |                |                | (1) for        |
+|                |                |                | imperial units |
+|                |                |                | (mph and       |
+|                |                |                | miles)         |
++----------------+----------------+----------------+----------------+
+| 1              | Maximum wheel  | 50             | Enter your     |
+|                | speed          |                | speed limit    |
+|                |                |                | (by law) to    |
+|                |                |                | run legal on   |
+|                |                |                | public roads.  |
+|                |                |                | The motor will |
+|                |                |                | fade out from  |
+|                |                |                | -0.5 km/h to   |
+|                |                |                | +2,0 km/h.     |
+|                |                |                | Tip: Europe    |
+|                |                |                | has generally  |
+|                |                |                | a speed limit  |
+|                |                |                | of 25 km/h for |
+|                |                |                | E-Bikes.       |
++----------------+----------------+----------------+----------------+
+| 2              | Wheel          | 2050           | Enter your     |
+|                | circumference  |                | wheel          |
+|                |                |                | circumference  |
+|                |                |                | so that speed  |
+|                |                |                | and distance   |
+|                |                |                | is correctly   |
+|                |                |                | calculated.\   |
+|                |                |                | \              |
+|                |                |                | Tip: Search on |
+|                |                |                | Google how to  |
+|                |                |                | measure wheel  |
+|                |                |                | circumference. |
+|                |                |                | But for a      |
+|                |                |                | quick setup    |
+|                |                |                | with ball park |
+|                |                |                | values use:    |
+|                |                |                | 26</em>wheel =     |
+|                |                |                | 2050; 27<em>      |
+|                |                |                | wheel = 2150;  |
+|                |                |                | 27.5</em>wheel     |
+|                |                |                | =2215; 28*     |
+|                |                |                | wheel = 2250;  |
+|                |                |                | 29\&#x27;\&#x27; wheel = |
+|                |                |                | 2300           |
++----------------+----------------+----------------+----------------+</p><p>\</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="1-battery">1: Battery<a class="hash-link" href="#1-battery" title="Direct link to heading">​</a></h2><p>+----------------+----------------+----------------+----------------+
+| <strong>Submenu      | *              | </strong>Default      | <em>              |
+| number**       | </em>Configuration | value<strong>        | *Description</strong> |
+|                | name**         |                |                |
++----------------+----------------+----------------+----------------+
+| 0              | Maximum        | 16 ampere      | Set maximum    |
+|                | current from   |                | allowable      |
+|                | battery        |                | current to be  |
+|                |                |                | pulled from    |
+|                |                |                | the battery.   |
+|                |                |                | This value is  |
+|                |                |                | limited        |
+|                |                |                | internally by  |
+|                |                |                | the firmware   |
+|                |                |                | to the safe    |
+|                |                |                | value of 18    |
+|                |                |                | ampere.        |
++----------------+----------------+----------------+----------------+
+| 1              | Battery        | 39 volt        | The controller |
+|                | low-cut-off    |                | will reduce    |
+|                | voltage        |                | power to stay  |
+|                |                |                | over this      |
+|                |                |                | limit!         |
+|                |                |                | Calculate the  |
+|                |                |                | limit by       |
+|                |                |                | multiplying    |
+|                |                |                | amount of      |
+|                |                |                | cells in       |
+|                |                |                | series with    |
+|                |                |                | the safe       |
+|                |                |                | c              |
+|                |                |                | ut-off-voltage |
+|                |                |                | per cell,      |
+|                |                |                | which is       |
+|                |                |                | usually        |
+|                |                |                | between 2.8 -  |
+|                |                |                | 3.0 volts.     |
+|                |                |                | Example: 39.0  |
+|                |                |                | volts for: 13  |
+|                |                |                | cells in       |
+|                |                |                | series <!-- -->*<!-- --> 3.0  |
+|                |                |                | volts = 39.0   |
+|                |                |                | volts.\        |
+|                |                |                | \              |
+|                |                |                | Tip: The       |
+|                |                |                | standard       |
+|                |                |                | Samsung cells  |
+|                |                |                | allow down to  |
+|                |                |                | 2.75 V but you |
+|                |                |                | need some      |
+|                |                |                | safety margin  |
+|                |                |                | because not    |
+|                |                |                | all cells have |
+|                |                |                | exactly the    |
+|                |                |                | same capacity. |
+|                |                |                | But setting a  |
+|                |                |                | too large      |
+|                |                |                | value you      |
+|                |                |                | loose range    |
+|                |                |                | and power. I   |
+|                |                |                | like to use    |
+|                |                |                | the value of   |
+|                |                |                | 29 V for a 36  |
+|                |                |                | V battery pack |
+|                |                |                | (= 10 cells in |
+|                |                |                | series).       |
++----------------+----------------+----------------+----------------+
+| 2              | Number of      | 13             | Set this value |
+|                | cells in       |                | so the battery |
+|                | series         |                | state          |
+|                |                |                | indicator      |
+|                |                |                | works          |
+|                |                |                | properly. This |
+|                |                |                | value can be   |
+|                |                |                | any integer    |
+|                |                |                | from 7 to 14\  |
+|                |                |                | \              |
+|                |                |                | Example        |
+|                |                |                | values: 7 for  |
+|                |                |                | 24 V battery;  |
+|                |                |                | 10 for 36 V    |
+|                |                |                | battery; 13    |
+|                |                |                | for 48 V       |
+|                |                |                | battery; 14    |
+|                |                |                | for 52 V       |
+|                |                |                | battery.       |
++----------------+----------------+----------------+----------------+
+| 3              | Battery        | 130 milliohms  | Set this value |
+|                | internal       |                | so the battery |
+|                | resistance     |                | state          |
+|                |                |                | indicator does |
+|                |                |                | not display a  |
+|                |                |                | lower state of |
+|                |                |                | charge when    |
+|                |                |                | pulling a lot  |
+|                |                |                | of power from  |
+|                |                |                | battery and    |
+|                |                |                | the voltage    |
+|                |                |                | sags.\         |
+|                |                |                | \              |
+|                |                |                | Explanation:   |
+|                |                |                | If you set the |
+|                |                |                | value to 0,    |
+|                |                |                | you will see   |
+|                |                |                | the battery    |
+|                |                |                | state          |
+|                |                |                | indicator      |
+|                |                |                | fluctuating    |
+|                |                |                | whenever the   |
+|                |                |                | motor draws    |
+|                |                |                | current from   |
+|                |                |                | the battery.   |
+|                |                |                | This is due to |
+|                |                |                | the internal   |
+|                |                |                | resistance in  |
+|                |                |                | the battery.   |
+|                |                |                | The            |
+|                |                |                | fluctuation    |
+|                |                |                | will disappear |
+|                |                |                | and be         |
+|                |                |                | filtered out   |
+|                |                |                | with a correct |
+|                |                |                | value.\        |
+|                |                |                | \              |
+|                |                |                | How to         |
+|                |                |                | calculate the  |
+|                |                |                | battery pack   |
+|                |                |                | resistance:\   |
+|                |                |                | 1. Limit the   |
+|                |                |                | battery        |
+|                |                |                | current to a   |
+|                |                |                | known value,   |
+|                |                |                | e.g. 10 amps\  |
+|                |                |                | 2. Read the    |
+|                |                |                | voltage drop   |
+|                |                |                | when motor is  |
+|                |                |                | pulling the 10 |
+|                |                |                | amps\          |
+|                |                |                | 3. Calculate   |
+|                |                |                | the resistance |
+|                |                |                | value\         |
+|                |                |                | \              |
+|                |                |                | Example for 10 |
+|                |                |                | amps current,  |
+|                |                |                | R = U / I, R = |
+|                |                |                | 1.2 volts drop |
+|                |                |                | / 10 amps, R = |
+|                |                |                | 0.120 = 120    |
+|                |                |                | milliohms.     |
++----------------+----------------+----------------+----------------+
+| 4              | Battery        | <!-- -->-<!-- -->             | Measured and   |
+|                | voltage (SOC)  |                | continuously   |
+|                |                |                | updated        |
+|                |                |                | battery        |
+|                |                |                | voltage State  |
+|                |                |                | Of Charge      |
+|                |                |                | (SOC). This    |
+|                |                |                | value is       |
+|                |                |                | filtered using |
+|                |                |                | the battery    |
+|                |                |                | pack           |
+|                |                |                | resistance.\   |
+|                |                |                | \              |
+|                |                |                | Tip: Here you  |
+|                |                |                | can evaluate   |
+|                |                |                | and test how   |
+|                |                |                | the set        |
+|                |                |                | internal       |
+|                |                |                | resistance of  |
+|                |                |                | the battery    |
+|                |                |                | affects the    |
+|                |                |                | voltage        |
+|                |                |                | reading.       |
++----------------+----------------+----------------+----------------+</p><p>\</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="battery_capacity_setup">2: Battery Capacity Setup<a class="hash-link" href="#battery_capacity_setup" title="Direct link to heading">​</a></h2><p>Under this configuration menu you can set parameters to display the
+state of charge of your E-Bike battery. If this function is enabled it
+will display how many watt-hours have been consumed since last charge
+and what percentage remains of the battery. Depending on preferences it
+is possible to set so that percentage of consumed charge is displayed
+instead of percentage of remaining charge.</p><p>Tip: If this function is enabled you will be able to see percentage of
+charge in the temperature field on your display. To enable or disable
+just click the ON/OFF-button together with the DOWN-button at the same
+time. Do not forget to enable and set up the function below.</p><p>+----------------+----------------+----------------+----------------+
+| <strong>Submenu      | *              | </strong>Default      | <em>              |
+| number**       | </em>Configuration | value<strong>        | *Description</strong> |
+|                | name**         |                |                |
++----------------+----------------+----------------+----------------+
+| 0              | Enable and set | 0              | Set (1) to     |
+|                | State of       |                | enable         |
+|                | Charge         |                | function. It   |
+|                | function       |                | will display   |
+|                |                |                | watt-hours     |
+|                |                |                | consumed and   |
+|                |                |                | percentage of  |
+|                |                |                | charge         |
+|                |                |                | remaining,     |
+|                |                |                | i.e., display  |
+|                |                |                | percentage     |
+|                |                |                | value from 100 |
+|                |                |                | % to 0 %.\     |
+|                |                |                | \              |
+|                |                |                | Set (2) to     |
+|                |                |                | enable         |
+|                |                |                | function. It   |
+|                |                |                | will display   |
+|                |                |                | watt-hours     |
+|                |                |                | consumed and   |
+|                |                |                | percentage of  |
+|                |                |                | charge         |
+|                |                |                | consumed,      |
+|                |                |                | i.e., display  |
+|                |                |                | percentage     |
+|                |                |                | value from 0 % |
+|                |                |                | to 100 %.\     |
+|                |                |                | \              |
+|                |                |                | Set (0) to     |
+|                |                |                | disable the    |
+|                |                |                | function.      |
++----------------+----------------+----------------+----------------+
+| 1              | Threshold      | 54.2 volt      | When powering  |
+|                | voltage to     |                | on the display |
+|                | reset          |                | this value is  |
+|                | watt-hour      |                | compared to    |
+|                | meter          |                | the battery    |
+|                |                |                | voltage. If it |
+|                |                |                | is lower, the  |
+|                |                |                | battery is     |
+|                |                |                | expected to be |
+|                |                |                | fully charged  |
+|                |                |                | and the        |
+|                |                |                | watt-hour      |
+|                |                |                | meter is       |
+|                |                |                | reset.\        |
+|                |                |                | \              |
+|                |                |                | Tip: To find a |
+|                |                |                | suitable       |
+|                |                |                | value, fully   |
+|                |                |                | charge the     |
+|                |                |                | battery and    |
+|                |                |                | measure the    |
+|                |                |                | voltage on the |
+|                |                |                | KT-LCD3, use a |
+|                |                |                | slightly lower |
+|                |                |                | value for the  |
+|                |                |                | threshold      |
+|                |                |                | voltage.\      |
+|                |                |                | \              |
+|                |                |                | Example: my 48 |
+|                |                |                | V battery      |
+|                |                |                | charges up to  |
+|                |                |                | 54.6 volts, so |
+|                |                |                | I set the      |
+|                |                |                | threshold to   |
+|                |                |                | 54.2 volts.    |
++----------------+----------------+----------------+----------------+
+| 2              | Total          | 0              | Set the total  |
+|                | watt-hours of  |                | capacity in    |
+|                | battery        |                | watt-hours     |
+|                |                |                | your battery   |
+|                |                |                | has.\          |
+|                |                |                | \              |
+|                |                |                | Tip: fully     |
+|                |                |                | charge the     |
+|                |                |                | battery and    |
+|                |                |                | then discharge |
+|                |                |                | it completely  |
+|                |                |                | and use the    |
+|                |                |                | measured value |
+|                |                |                | to input       |
+|                |                |                | here.\         |
+|                |                |                | \              |
+|                |                |                | Tip: the       |
+|                |                |                | capacities     |
+|                |                |                | stated from    |
+|                |                |                | suppliers are  |
+|                |                |                | often too      |
+|                |                |                | high, expect a |
+|                |                |                | value of       |
+|                |                |                | around 80 % -  |
+|                |                |                | 90 % of stated |
+|                |                |                | value. I use   |
+|                |                |                | 350 Wh for my  |
+|                |                |                | 386 Wh         |
+|                |                |                | battery.\      |
+|                |                |                | \              |
+|                |                |                | Tip: roughly   |
+|                |                |                | calculate the  |
+|                |                |                | capacity by    |
+|                |                |                | multiplying    |
+|                |                |                | the nominal    |
+|                |                |                | voltage with   |
+|                |                |                | the nominal    |
+|                |                |                | ampere hours.  |
+|                |                |                | Example: a 48  |
+|                |                |                | volt, 14.5 Ah  |
+|                |                |                | battery has a  |
+|                |                |                | nominal        |
+|                |                |                | watt-hour      |
+|                |                |                | capacity of    |
+|                |                |                | 696 Wh.        |
++----------------+----------------+----------------+----------------+
+| 3              | Consumed       | <!-- -->-<!-- -->             | This value     |
+|                | watt-hours     |                | represents     |
+|                |                |                | consumed       |
+|                |                |                | watt-hours     |
+|                |                |                | since last     |
+|                |                |                | reset. It is   |
+|                |                |                | reset          |
+|                |                |                | automatically  |
+|                |                |                | when you power |
+|                |                |                | on the LCD and |
+|                |                |                | the battery is |
+|                |                |                | fully charged, |
+|                |                |                | i.e., above    |
+|                |                |                | the set        |
+|                |                |                | threshold      |
+|                |                |                | voltage.       |
++----------------+----------------+----------------+----------------+</p><p>\</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="assist_levels">3: Assist Levels<a class="hash-link" href="#assist_levels" title="Direct link to heading">​</a></h2><p>Here you can configure how many assist levels you wish to be able to
+select and also their respective multipliers. The defaults should
+already work for most people.</p><p>The assist level sets the motor power as a factor of the power the rider
+is generating on the crankshaft. For instance, if assist level 3 is
+chosen and configured with a multiplier of 2.0, when the rider is
+generating a power of 100 watts, the motor power will assist another 200
+watts.</p><p>+----------------+----------------+----------------+----------------+
+| <strong>Submenu      | *              | </strong>Default      | <em>              |
+| number**       | </em>Configuration | value<strong>        | *Description</strong> |
+|                | name**         |                |                |
++----------------+----------------+----------------+----------------+
+| 0              | Number of      | 5              | Select the     |
+|                | assist levels  |                | desired number |
+|                |                |                | of assist      |
+|                |                |                | levels from a  |
+|                |                |                | minimum of 1   |
+|                |                |                | to a maximum   |
+|                |                |                | of 9.          |
++----------------+----------------+----------------+----------------+
+| 1              | Assist level 1 | 0.5            | The value with |
+|                | multiplier     |                | which the      |
+|                |                |                | human pedaling |
+|                |                |                | power is       |
+|                |                |                | multiplied     |
+|                |                |                | with.\         |
+|                |                |                | \              |
+|                |                |                | Example: 0.5   |
+|                |                |                | <!-- -->*<!-- --> 200 W       |
+|                |                |                | (human power)  |
+|                |                |                | = 100 W assist |
+|                |                |                | power. This    |
+|                |                |                | results in 300 |
+|                |                |                | W total power. |
++----------------+----------------+----------------+----------------+
+| 2              | Assist level X | <!-- -->.<!-- -->...          | The desired    |
+|                | multiplier     |                | multiplier for |
+|                |                |                | assist level   |
+|                |                |                | X.             |
++----------------+----------------+----------------+----------------+</p><p>\</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="startup_boost_function">4: Startup BOOST function<a class="hash-link" href="#startup_boost_function" title="Direct link to heading">​</a></h2><p>Here you can enable, disable and configure the BOOST feature. This
+feature helps from standstills where you might need greater assistance.
+It gives more power during a set time and then fades the power back to
+normal assistance. To configure the function for you likening please set
+appropriate values.</p><p>+----------------+----------------+----------------+----------------+
+| <strong>Submenu      | *              | </strong>Default      | <em>              |
+| number**       | </em>Configuration | value<strong>        | *Description</strong> |
+|                | name**         |                |                |
++----------------+----------------+----------------+----------------+
+| 0              | BOOST feature  | 0              | Set (1) to     |
+|                |                |                | enable or (0)  |
+|                |                |                | to disable.    |
++----------------+----------------+----------------+----------------+
+| 1              | On startup     | 1              | Set (1) to     |
+|                | only /         |                | enable BOOST   |
+|                | everytime      |                | feature every  |
+|                |                |                | time pedal     |
+|                |                |                | cadence or     |
+|                |                |                | torque sensor  |
+|                |                |                | value are      |
+|                |                |                | zero. Set (0)  |
+|                |                |                | to enable      |
+|                |                |                | BOOST feature  |
+|                |                |                | only when      |
+|                |                |                | startup and    |
+|                |                |                | bicycle wheel  |
+|                |                |                | speed is equal |
+|                |                |                | to zero;       |
++----------------+----------------+----------------+----------------+
+| 2              | Limit BOOST    | 0              | Set (1) to     |
+|                | power to max   |                | enable BOOST   |
+|                | battery power  |                | power limit to |
+|                |                |                | the maximum    |
+|                |                |                | battery power  |
+|                |                |                | value. Set (0) |
+|                |                |                | to disable.    |
++----------------+----------------+----------------+----------------+
+| 3              | BOOST time     | 2.0 seconds    | Set time limit |
+|                |                |                | of BOOST.      |
++----------------+----------------+----------------+----------------+
+| 4              | Fade out BOOST | 3.5 seconds    | Set time limit |
+|                |                |                | to transition  |
+|                |                |                | of power from  |
+|                |                |                | BOOST to       |
+|                |                |                | regular power. |
++----------------+----------------+----------------+----------------+
+| 5              | Assist level 1 | 4              | Set the BOOST  |
+|                | BOOST          |                | multipler      |
+|                | multiplier     |                | corresponding  |
+|                |                |                | to assist      |
+|                |                |                | level 1.\      |
+|                |                |                | \              |
+|                |                |                | Tip: See       |
+|                |                |                | assist levels  |
+|                |                |                | for more       |
+|                |                |                | information    |
+|                |                |                | about          |
+|                |                |                | multipliers.   |
++----------------+----------------+----------------+----------------+
+| 6              | Assist level X | <!-- -->-<!-- -->             | Set the BOOST  |
+|                | BOOST          |                | multipler      |
+|                | multiplier     |                | corresponding  |
+|                |                |                | to assist      |
+|                |                |                | level X.\      |
+|                |                |                | \              |
+|                |                |                | Tip: See       |
+|                |                |                | assist levels  |
+|                |                |                | for more       |
+|                |                |                | information    |
+|                |                |                | about          |
+|                |                |                | multipliers.   |
++----------------+----------------+----------------+----------------+</p><p>\</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="motor_temperature_protection">5: Motor Temperature Protection<a class="hash-link" href="#motor_temperature_protection" title="Direct link to heading">​</a></h2><p>This function protects your motor from overheating resulting in
+permanent damage/loss of torque. See: <strong><a title="wikilink" href="/docs/tsdz2/opensource firmware/casainho/TSDZ2_motor_demagnetized_due_to_overheating">TSDZ2 motor demagnetized due to
+overheating</a></strong>.
+You can only use and enable this feature if you have installed the <a title="wikilink" href="/docs/tsdz2/opensource firmware/casainho/How_to_install_motor_temperature_sensor">
+motor temperature
+sensor</a>.</p><h3 class="anchor anchorWithStickyNavbar_LWe7" id="how_it_works">How it works<a class="hash-link" href="#how_it_works" title="Direct link to heading">​</a></h3><p>If you have installed the <a title="wikilink" href="/docs/tsdz2/opensource firmware/casainho/How_to_install_motor_temperature_sensor"> motor temperature
+sensor</a> and you
+enable the function, you will be able to see the motor temperature in
+the temperature field of the display. When the set minimum motor
+temperature threshold is reached, the motor current will start to be
+limited. If the temperature keeps rising this will result in even more
+current, and therefore overall power, limitations. If the maximum motor
+temperature is reached the current will be completely limited.</p><p>The temperature value on the display will blink if the motor current is
+being limited. As the function limits the current more it will blink
+faster corresponding to higher limitations on current. Finally, if the
+current is completely limited, the blink rate will be very fast.</p><p>+----------------+----------------+----------------+----------------+
+| <strong>Submenu      | *              | </strong>Default      | <em>              |
+| number**       | </em>Configuration | value<strong>        | *Description</strong> |
+|                | name**         |                |                |
++----------------+----------------+----------------+----------------+
+| 0              | Motor          | 0              | Set (1) to     |
+|                | temperature    |                | enable the     |
+|                | protection     |                | motor          |
+|                |                |                | temperature    |
+|                |                |                | control or set |
+|                |                |                | (0) to         |
+|                |                |                | disable.\      |
+|                |                |                | \              |
+|                |                |                | NOTE: if you   |
+|                |                |                | do not have    |
+|                |                |                | the <!-- -->[motor     |
+|                |                |                | temperature    |
+|                |                |                | sensor         |
+|                |                |                | install        |
+|                |                |                | ed]<!-- -->(How_to_ins |
+|                |                |                | tall_motor_tem |
+|                |                |                | perature_senso |
+|                |                |                | r &quot;wikilink&quot;), |
+|                |                |                | you should     |
+|                |                |                | disable this   |
+|                |                |                | option and     |
+|                |                |                | ignore the     |
+|                |                |                | immediate      |
+|                |                |                | configurations |
+|                |                |                | below.         |
++----------------+----------------+----------------+----------------+
+| 1              | Minimum        | 75 °C          | Set the        |
+|                | temperature    |                | minimum motor  |
+|                |                |                | temperature at |
+|                |                |                | which the      |
+|                |                |                | motor current  |
+|                |                |                | will start to  |
+|                |                |                | be limited.    |
++----------------+----------------+----------------+----------------+
+| 2              | Maximum        | 85 °C          | Set the        |
+|                | temperature    |                | maximum motor  |
+|                |                |                | temperature at |
+|                |                |                | which the      |
+|                |                |                | motor current  |
+|                |                |                | will be        |
+|                |                |                | completely     |
+|                |                |                | blocked, i.e., |
+|                |                |                | motor shutoff. |
++----------------+----------------+----------------+----------------+</p><p>\</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="6-display">6: Display<a class="hash-link" href="#6-display" title="Direct link to heading">​</a></h2><p>+----------------+----------------+----------------+----------------+
+| <strong>Submenu      | *              | </strong>Default      | <em>              |
+| number**       | </em>Configuration | value<strong>        | *Description</strong> |
+|                | name**         |                |                |
++----------------+----------------+----------------+----------------+
+| 0              | LCD brightness | 5              | Percentage of  |
+|                | when backlight |                | brightness     |
+|                | is off         |                | when backlight |
+|                |                |                | is turned off, |
+|                |                |                | e.g., 5 %      |
++----------------+----------------+----------------+----------------+
+| 1              | LCD brightness | 80             | Percentage of  |
+|                | when backlight |                | brightness     |
+|                | is on          |                | when backlight |
+|                |                |                | is turned on,  |
+|                |                |                | e.g., 80 %     |
++----------------+----------------+----------------+----------------+
+| 2              | LCD auto power | 15             | Automatic      |
+|                | off            |                | power off      |
+|                |                |                | after set      |
+|                |                |                | amount of      |
+|                |                |                | minutes.       |
++----------------+----------------+----------------+----------------+
+| 3              | Reset to       | 0              | 1.  Increase   |
+|                | factory        |                |     the value  |
+|                | defaults       |                |     to 10      |
+|                |                |                | 2.  The        |
+|                |                |                |     display    |
+|                |                |                |     will turn  |
+|                |                |                |     off        |
+|                |                |                | 3.  Turn it on |
+|                |                |                |     again      |
+|                |                |                | 4.  Factory    |
+|                |                |                |     default    |
+|                |                |                |     settings   |
+|                |                |                |     will be    |
+|                |                |                |     restored   |
++----------------+----------------+----------------+----------------+</p><p>\</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="offroad_mode">7: Offroad Mode<a class="hash-link" href="#offroad_mode" title="Direct link to heading">​</a></h2><p>This function enables user to limit speed and power when using bike on
+road. When using the bike off road where laws may be different it is
+possible to toggle Offroad mode and unlock a higher speed or power
+limit. Set parameters suitable for your specific laws and preferences.</p><hr><p>  <strong>Submenu number</strong>   <strong>Configuration name</strong>     <strong>Default value</strong>   <strong>Description</strong>
+0                    Feature toggle             0                   Select (1) to enable or (0) to disable.
+1                    Active on system startup   0                   Determines whether offroad mode should be active on system startup. Select (1) to enable or select (0) to disable.
+2                    Speed limit                25 km/h             This speed limit is used when offroad mode is not active. Configure your speed which is legal for using on public roads. The motor will fade out power from -0.5 km/h to +2,0 km/h.
+3                    Limit power                0                   Determines whether power should be limited when offroad mode is not active. Select (1) to enable or (0) to disable.
+4                    Power limit                250 W               The power limit in watts. For most countries in Europe the legal power limit is 250 W.</p><hr><p>\</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="8-various">8: Various<a class="hash-link" href="#8-various" title="Direct link to heading">​</a></h2><p>+----------------+----------------+----------------+----------------+
+| <strong>Submenu      | *              | </strong>Default      | <em>              |
+| number**       | </em>Configuration | value<strong>        | *Description</strong> |
+|                | name**         |                |                |
++----------------+----------------+----------------+----------------+
+| 0              | Motor voltage  | 0              | Depending on   |
+|                | type           |                | type of motor, |
+|                |                |                | select         |
+|                |                |                | appropriate    |
+|                |                |                | value so that  |
+|                |                |                | FOC            |
+|                |                |                | calculations   |
+|                |                |                | are correctly  |
+|                |                |                | executed. The  |
+|                |                |                | voltage of the |
+|                |                |                | battery does   |
+|                |                |                | not matter,    |
+|                |                |                | this value     |
+|                |                |                | should always  |
+|                |                |                | be set         |
+|                |                |                | depending on   |
+|                |                |                | type of        |
+|                |                |                | motor.\        |
+|                |                |                | \              |
+|                |                |                | <!-- -->*<!-- --> Set 0 for   |
+|                |                |                | 48 V brushless |
+|                |                |                | motor (TSDZ2   |
+|                |                |                | 52 V version   |
+|                |                |                | has a 48 V     |
+|                |                |                | brushless      |
+|                |                |                | motor).        |
+|                |                |                |                |
+|                |                |                | -   Set 1 for  |
+|                |                |                |     36 V       |
+|                |                |                |     brushless  |
+|                |                |                |     motor.     |
+|                |                |                | -   Set 2      |
+|                |                |                |                |
+|                |                |                | (EXPERIMENTAL) |
+|                |                |                |     for the 36 |
+|                |                |                |     V          |
+|                |                |                |     brushless  |
+|                |                |                |     motor,     |
+|                |                |                |     high       |
+|                |                |                |     cadence    |
+|                |                |                |     mode.      |
+|                |                |                |     Maybe not  |
+|                |                |                |     good for   |
+|                |                |                |     the motor, |
+|                |                |                |     use at     |
+|                |                |                |     your own   |
+|                |                |                |     risk.      |
+|                |                |                |     Probably   |
+|                |                |                |     only       |
+|                |                |                |     suitable   |
+|                |                |                |     for the 36 |
+|                |                |                |     V motor.   |
++----------------+----------------+----------------+----------------+
+| 1              | Motor          | 0              | Select (1) to  |
+|                | assistance     |                | enable or      |
+|                | startup        |                | select (0) to  |
+|                | without pedal  |                | disable.       |
+|                | rotation       |                | Recommended to |
+|                |                |                | keep at        |
+|                |                |                | disabled (0)   |
+|                |                |                | if you do not  |
+|                |                |                | have brake     |
+|                |                |                | sensors        |
+|                |                |                | installed.     |
++----------------+----------------+----------------+----------------+
+| 2              | Set odometer   | 0              | Set the        |
+|                |                |                | odometer to    |
+|                |                |                | preferred      |
+|                |                |                | value.         |
+|                |                |                | Increase the   |
+|                |                |                | value by       |
+|                |                |                | pressing UP    |
+|                |                |                | button or      |
+|                |                |                | press and hold |
+|                |                |                | to have the    |
+|                |                |                | value          |
+|                |                |                | increment      |
+|                |                |                | automatically. |
+|                |                |                | Decrease the   |
+|                |                |                | value by       |
+|                |                |                | pressing the   |
+|                |                |                | DOWN button or |
+|                |                |                | press and hold |
+|                |                |                | to have the    |
+|                |                |                | value          |
+|                |                |                | decrement      |
+|                |                |                | automatically. |
++----------------+----------------+----------------+----------------+</p><p>\</p><h2 class="anchor anchorWithStickyNavbar_LWe7" id="advanced_technical_data">9: Advanced Technical Data<a class="hash-link" href="#advanced_technical_data" title="Direct link to heading">​</a></h2><hr><p>  <strong>Submenu number</strong>   <strong>Configuration name</strong>    <strong>Description</strong>
+0                    ADC throttle              See the current value
+1                    Throttle                  See the current value
+2                    ADC pedal torque sensor   See the current value
+3                    Pedal torque sensor       See the current value
+4                    Pedal cadence             See the current value
+5                    Pedal human power         See the current value
+6                    PWM duty cycle            See the current value
+7                    Motor speed in ERPs       See the current value
+8                    FOC angle                 See the current value. This value must be multiplied by 1.4 to get angle value in degrees.</p><hr></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="theme-doc-footer-edit-meta-row row"><div class="col"><a href="https://github.com/OpenSourceEBike/OpenSourceEBike.github.io/tree/master/docs/tsdz2/opensource firmware/casainho/Usage-and-configuration-of-firmware-version-0.17.x.md" target="_blank" rel="noreferrer noopener" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Edit this page</a></div><div class="col lastUpdated_vwxv"></div></div></footer></article><nav class="pagination-nav docusaurus-mt-lg" aria-label="Docs pages navigation"><a class="pagination-nav__link pagination-nav__link--prev" href="/docs/tsdz2/opensource firmware/casainho/Usage-and-configuration-of-firmware-version-0.14.x"><div class="pagination-nav__sublabel">Previous</div><div class="pagination-nav__label">Usage-and-configuration-of-firmware-version-0.14.x</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#main_screen" class="table-of-contents__link toc-highlight">1. Main screen</a></li><li><a href="#motor_maximum_power_screen" class="table-of-contents__link toc-highlight">2. Motor maximum power screen</a></li><li><a href="#configuration_menu" class="table-of-contents__link toc-highlight">Configuration menu</a></li><li><a href="#general_setup" class="table-of-contents__link toc-highlight">0: General Setup</a></li><li><a href="#1-battery" class="table-of-contents__link toc-highlight">1: Battery</a></li><li><a href="#battery_capacity_setup" class="table-of-contents__link toc-highlight">2: Battery Capacity Setup</a></li><li><a href="#assist_levels" class="table-of-contents__link toc-highlight">3: Assist Levels</a></li><li><a href="#startup_boost_function" class="table-of-contents__link toc-highlight">4: Startup BOOST function</a></li><li><a href="#motor_temperature_protection" class="table-of-contents__link toc-highlight">5: Motor Temperature Protection</a><ul><li><a href="#how_it_works" class="table-of-contents__link toc-highlight">How it works</a></li></ul></li><li><a href="#6-display" class="table-of-contents__link toc-highlight">6: Display</a></li><li><a href="#offroad_mode" class="table-of-contents__link toc-highlight">7: Offroad Mode</a></li><li><a href="#8-various" class="table-of-contents__link toc-highlight">8: Various</a></li><li><a href="#advanced_technical_data" class="table-of-contents__link toc-highlight">9: Advanced Technical Data</a></li></ul></div></div></div></div></main></div></div><footer class="footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="col footer__col"><div class="footer__title">Other</div><ul class="footer__items clean-list"></ul></div><div class="col footer__col"><div class="footer__title">Community</div><ul class="footer__items clean-list"></ul></div><div class="col footer__col"><div class="footer__title">Legal</div><ul class="footer__items clean-list"></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2022 OpenSource-EBike</div></div></div></footer></div>
+<script src="/assets/js/runtime~main.44d6b64c.js"></script>
+<script src="/assets/js/main.5ed12891.js"></script>
+</body>
+</html>
