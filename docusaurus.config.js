@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "OpenSourceEBike", // Usually your GitHub org/user name.
-  projectName: "OpenSourceEBike.github.io", // Usually your repo name.
+  organizationName: "Opensource-EBike", // Usually your GitHub org/user name.
+  projectName: "Opensource-EBike.github.io", // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -42,7 +42,7 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            "https://github.com/OpenSourceEBike/OpenSourceEBike.github.io/tree/master/",
+            "https://github.com/opensource-ebike/site/tree/master/",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -108,7 +108,7 @@ const config = {
             position: "right",
           },
           {
-            href: "https://github.com/OpenSourceEBike/OpenSourceEBike.github.io",
+            href: "https://github.com/opensource-ebike/site",
             label: "GitHub",
             position: "right",
           },
